@@ -53,6 +53,7 @@ $(function () {
 
         //Notify user if displaylayerprogress plugin is not installed
         self.DisplayLayerProgressAvailable = function () {
+            console.log(self.settingsViewModel.settings.plugins);
             if (self.settingsViewModel.settings.plugins.DisplayLayerProgress)
                 return true;
             else {
